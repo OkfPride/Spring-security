@@ -13,14 +13,14 @@
         <title>Start Page</title>
     </head>
     <body>
-        <%--<security:authorize access="hasRole('Manager')">--%>
+        <security:authorize access="hasRole('MANAGER')">
         <input type="button" value="perfomance" onclick="window.location.href = 'manager_page'"/> only for HR staff
-    <%--</security:authorize>--%>
+    </security:authorize>
     <br/>
     <br/>
-    <%--<security:authorize access = "hasRole('HR')">--%>
+    <security:authorize access = "hasRole('HR')">
         <button value="salary" onclick="window.location.href = 'hr_page'">only for HR staff</button>only for HR staff
-    <%--</security:authorize>--%>
+    </security:authorize>
 </body>
 
 
